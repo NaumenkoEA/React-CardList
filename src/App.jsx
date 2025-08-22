@@ -11,10 +11,13 @@ function App() {
     setCardList((prev) => [...prev, { title }]);
   };
 
+  const deleteCard = (index) => {
+    setCardList(cardList.filter((_, i) => i !== index))};
+
   return (
     <div>
       <InputForm addCard={addCard} />
-      <CardList cardList={cardList} />
+      <CardList cardList={cardList} deleteCard={deleteCard} />
     </div>
   );
 }
