@@ -1,0 +1,12 @@
+.input-form {
+    padding: 16px;
+
+}
+
+.input-form input,
+.input-form button {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
